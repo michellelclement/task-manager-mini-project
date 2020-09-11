@@ -5,7 +5,7 @@ if os.path.exists("env.py"):
 # The above will only install if can find the env.py file. Remember this will not be pushed to Github
 
 # Create an instance of flask in a variable app
-app = flask(__name__)
+app = Flask(__name__)
 
 
 # Check properly configured with a test function
