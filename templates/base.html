@@ -39,7 +39,7 @@
             <li><a href="#">New Task</a></li>
             <li><a href="#">Manage Categories</a></li>
             <li><a href="#">Log Out</a></li>
-            <li><a href="#">Log In</a></li>
+            <li><a href="{{ url_for('login') }}">Log In</a></li>
             <li><a href="{{ url_for('register') }}">Register</a></li>
           </ul>
         </div>
@@ -56,7 +56,7 @@
         <li><a href="#">New Task</a></li>
         <li><a href="#">Manage Categories</a></li>
         <li><a href="#">Log Out</a></li>
-        <li><a href="#">Log In</a></li>
+        <li><a href="{{ url_for('login') }}">Log In</a></li>
         <li><a href="{{ url_for('register') }}">Register</a></li>
       </ul>
     </header>
@@ -67,7 +67,7 @@
         {% if messages %}
             {% for message in messages %}
                 <div class="row flashes">
-                    <h4 class="light-blue lighten-4 center-aligh">{{ message }}</h4>
+                    <h4 class="light-blue lighten-4 center-align">{{ message }}</h4>
                 </div>
             {% endfor %}
         {% endif %}
