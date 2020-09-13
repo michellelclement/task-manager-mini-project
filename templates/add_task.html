@@ -3,7 +3,7 @@
 <h3 class="light-blue-text text-darken-4 center-align">Add Task</h3>
 
 <div class="row card-panel grey lighten-5">
-  <form class="col s12" method="POST" action="">
+  <form class="col s12" method="POST" action="{{ url_for('add_task') }}">
     <div class="row">
       <div class="input-field col s12">
         <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
@@ -23,6 +23,7 @@
         <label for="category_name">Task Category</label>
       </div>
     </div>
+     <!-- Task Name-->
     <div class="row">
       <div class="input-field col s12">
         <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
@@ -38,6 +39,7 @@
         <label for="task_name">Task Name</label>
       </div>
     </div>
+     <!-- Task Description -->
     <div class="row">
       <div class="input-field col s12">
         <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
@@ -53,7 +55,7 @@
       </div>
     </div>
 
-    <!-- Date Picker-->
+    <!-- Date Picker -->
 
     <div class="row">
       <div class="input-field col s12">
@@ -82,6 +84,15 @@
             Is Urgent
           </label>
         </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="row">
+      <div class="col s12 center-align">
+        <button type="submit" class="btn-large light-blue darken1 text-shadow">Add Task 
+        <i class="fas fa-plus-square right"></i>
+        </button>
+      </div>
       </div>
     </div>
   </form>
